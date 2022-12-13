@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSTUDIO</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-         <nav class="header-link">
-            <a class="header-link-a" href="./index.html"><span class="header-link-web">WEB</span>STUDIO</a>
-            <ul class="header-link-nav">
-                <li class="header-link-nav-li"><a class="header-link-nav-a" href="">Studio</a></li>
-                <li class="header-link-nav-li"><a class="header-link-nav-a" href="./portfolio.html">Portfolio</a></li>
-                <li class="header-link-nav-li"><a class="header-link-nav-a" href="">Contacts</a></li>
-            </ul>
-         </nav>
-         <ul class="header-info">
-            <li class="header-info-li"><a class="header-info-b" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="header-info-li"><a class="header-info-b" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
-         </ul> 
+         <div class="container-head">
+            <nav class="header-link">
+                <a class="header-link-a" href="./index.html"><span class="header-link-web">WEB</span>STUDIO</a>
+                <ul class="header-link-nav">
+                    <li class="header-link-nav-li"><a class="header-link-nav-a" href="">Studio</a></li>
+                    <li class="header-link-nav-li"><a class="header-link-nav-a" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header-link-nav-li"><a class="header-link-nav-a" href="">Contacts</a></li>
+                </ul>
+             </nav>
+             <ul class="header-info">
+                <li class="header-info-li"><a class="header-info-b" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-info-li"><a class="header-info-b" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+             </ul> 
+         </div>
     </header>
     <main>
         <section class="hero">
-             <h1 class="hero-top">Effective Solutions for Your Business</h1>
-             <button class="hero-btn" type="button">Order Service</button>
+            <div class="container-full">
+                <h1 class="hero-top">Effective Solutions for Your Business</h1>
+                <!-- Не понимаю почему он не становится посередине героя -->
+                <button class="hero-btn" type="button">Order Service</button>
+            </div>
         </section>
         <section class="advantages">
          <div class="container">
@@ -62,25 +68,27 @@
             </div>
         </section>
         <section class="meet">
-            <h2 class="meet-title">Our Team</h2>
-            <ul class="meet-title-link">
-                <li class="meet-title-color" ><img width="264" height="260" src="./images/photo-1.png" alt="Portrait 1">
-                    <h3 class="meet-title-link-caption">Mark Guerrero</h3>
-                    <p class="meet-title-link-text">Product Designer</p>
-                </li>
-                <li class="meet-title-color"><img width="264" height="260" src="./images/photo-2.png" alt="Portrait 2">
-                    <h3 class="meet-title-link-caption">Tom Ford</h3>
-                    <p class="meet-title-link-text">Frontend Developer</p>
-                </li>
-                <li class="meet-title-color"><img width="264" height="260" src="./images/photo-3.png" alt="Portrait 3">
-                    <h3 class="meet-title-link-caption">Camila Garcia</h3>
-                    <p class="meet-title-link-text">Marketing</p>
-                </li>
-                <li class="meet-title-color"><img width="264" height="260" src="./images/photo-4.png" alt="Portrait 4">
-                    <h3 class="meet-title-link-caption">Daniel Wilson</h3>
-                    <p class="meet-title-link-text">UI Designer</p>
-                </li>
-            </ul>
+            <div class="container-full">
+                <h2 class="meet-title">Our Team</h2>
+                <ul class="meet-title-link">
+                    <li class="meet-title-color" ><img width="264" height="260" src="./images/photo-1.png" alt="Portrait 1">
+                        <h3 class="meet-title-link-caption">Mark Guerrero</h3>
+                        <p class="meet-title-link-text">Product Designer</p>
+                    </li>
+                    <li class="meet-title-color"><img width="264" height="260" src="./images/photo-2.png" alt="Portrait 2">
+                        <h3 class="meet-title-link-caption">Tom Ford</h3>
+                        <p class="meet-title-link-text">Frontend Developer</p>
+                    </li>
+                    <li class="meet-title-color"><img width="264" height="260" src="./images/photo-3.png" alt="Portrait 3">
+                        <h3 class="meet-title-link-caption">Camila Garcia</h3>
+                        <p class="meet-title-link-text">Marketing</p>
+                    </li>
+                    <li class="meet-title-color"><img width="264" height="260" src="./images/photo-4.png" alt="Portrait 4">
+                        <h3 class="meet-title-link-caption">Daniel Wilson</h3>
+                        <p class="meet-title-link-text">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
      
     </main>
