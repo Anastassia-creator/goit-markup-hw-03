@@ -46,10 +46,12 @@ img {
 .header .container-head {
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 1158px;
 
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 } 
 
 .header-link {
@@ -65,8 +67,7 @@ img {
     color: var(--accent-color);
 }
 .header-link-a { 
-    margin-left: 156px;
-
+    display: block;
 
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
@@ -79,8 +80,6 @@ img {
 .header-link-nav {
     display: flex;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
     margin-left: 77px;
 }
 
@@ -90,6 +89,10 @@ img {
 
 
 .header-link-nav-a {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -106,6 +109,7 @@ img {
    margin-left: auto;
     align-items: center;
 }
+
 
 .header-info-li:not(:last-child) {
     margin-right: 40px;
@@ -130,6 +134,8 @@ img {
 }
 .hero-top {
     max-width: 492px;
+    margin-right: auto;
+    margin-left: auto;
 
     font-weight: 700;
     font-size: 56px;
@@ -140,6 +146,7 @@ img {
     margin-top: 48px;
     padding: 16px 32px;
     border: none;
+    border-radius: 4px;
     
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -153,7 +160,7 @@ img {
 }
 
 .container-full {
-    width: 1440px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -173,12 +180,18 @@ img {
 
 }
 .top-link-li:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 24px;
 
 }
 
+.top-link-li {
+    flex-basis: calc((100% -72px) / 4);
+}
+
+
 .top-link-caption {
     margin-bottom: 8px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -207,9 +220,16 @@ img {
       margin: -1px;
   } 
 
-.container .link {
+
+
+.advantages-container  {
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 120px;
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
  .advanteges .top-link-caption {
@@ -247,14 +267,13 @@ img {
 }
 
 .meet {
-
-    
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #F4F4FD;
 }
 
 .meet-title {
     text-align: center;
-    padding-top: 120px;
     margin-bottom: 72px;
 
 
@@ -268,10 +287,14 @@ img {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-bottom: 120px;
     margin: 0;
 
     background-color: #F4F4FD;
+}
+
+.meet-title-link-block {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .meet-title-color {
@@ -283,7 +306,6 @@ img {
 }
 
 .meet-title-link-caption {
-    margin-top: 32px;
     margin-bottom: 8px;
 
     font-size: 20px;
@@ -291,7 +313,6 @@ img {
     color: var(--second-basic-color);
 }
 .meet-title-link-text {
-    margin-bottom: 32px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -299,17 +320,9 @@ img {
 }
 
 .footer {
-    background-color: #2E2F42;
-}
-
-.footer .blok {
-    width: 1440px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 100px;
+    padding-top: 100px;    
     padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #2E2F42;
 }
 
 
@@ -350,19 +363,22 @@ img {
 
 
 .container-btn {
-    width: 286;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.porfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio-nav {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
-
+    margin-bottom: 72px;
 }
 
 .portfolio-nav-li:not(:last-child) {
@@ -372,6 +388,7 @@ img {
 .portfolio-nav-btn { 
     padding: 8px 16px;
     border: none;
+    border-radius: 4px;
     
     font-weight: 600;
     font-size: 16px;
@@ -388,20 +405,12 @@ img {
     background-color: var(--accent-color);
 }
 
-.porttfolio-container {
-    width: 1228px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .work {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    margin-bottom: 120px;
+
 
 }
 .work .card {
@@ -417,11 +426,13 @@ img {
 
 .card-text {
     border: 0.5px solid #F4F4FD;
-    border-top: none;
+    border-top: none;   
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .work-caption {
-    padding-top: 32px;
+    
     padding-left: 16px;
 
     font-weight: 600;
@@ -432,7 +443,7 @@ img {
 .work-text {
     padding-top: 8px;
     padding-left: 16px;
-    padding-bottom: 32px;
+
     
     font-size: 16px;
     line-height: 1.2;
